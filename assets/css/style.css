@@ -27,4 +27,90 @@
   color: #E51B3E;
   font-weight: bolder;
 }
+
+.intro .button {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid #2ecc71;
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #efefef;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.catalog {
+  padding: 40px 0;
+}
+
+.catalog h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bolder;
+}
+
+.catalog .card {
+  margin-bottom: 25px;
+}
+
+.catalog .card img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+footer {
+  background-color: #040404;
+  color: #efefef;
+  padding: 40px 0 20px;
+}
+
+footer .aluno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .aluno h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer .aluno p {
+  margin: 0 0 20px;
+}
+
+footer .aluno ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .aluno ul a img {
+  max-width: 48px;
+  opacity: 0.3;
+  -webkit-transition: .3s ease-in-out all;
+  transition: .3s ease-in-out all;
+}
+
+footer .aluno ul a:hover > img {
+  opacity: 1;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
