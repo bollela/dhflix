@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Flix - Item</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
 </head>
+
 <body>
     <header>
-        <img src="assets/img/logo.png">
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="assets/img/logo.png">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about-item-catalog.html">Itens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="movie-video">
-
+        <section class="movie-video row-3 column-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="./assets/img/filmes/alertavermelho.jpg" alt="imagem alertavermelho">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="about-movie">
-            <h1>Name</h1>
-            <div class="movie-rate">
-                <ul>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                    <li>star</li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Alerta Vermelho</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, excepturi ad veniam nemo ea
+                            alias sint dolore at, vero quod labore magnam harum iste doloremque incidunt possimus. Iusto
+                            quas cumque reiciendis ullam, temporibus nesciunt, quibusdam culpa deleniti dolorem
+                            officiis, mollitia dignissimos quo asperiores quasi sed nihil labore inventore praesentium
+                            ea!</p>
+                    </div>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, praesentium numquam ea quod cum fugiat ducimus eveniet, odit, culpa iure veniam ipsam nostrum officia! Ut odio ullam at numquam mollitia quo qui voluptatibus quod hic provident quas, facilis corrupti consectetur a ipsam ducimus cupiditate molestias totam voluptatem. Perspiciatis, quisquam distinctio.</p>
-
-            <div class="director">
-                <h2>Director</h2>
-                <p>Nome do diretor</p>
-            </div>
-
-            <div class="writters">
-                <h2>Escritores</h2>
-                <p>Nome do escritor - nome do escritor - nome do escritor</p>
-            </div>
-
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Diretor</h2>
+                            <a href="">Lorem ipsum dolor sit amet.</a>
+                        </div>
+                        <div class="col">
+                            <h2>Escritores</h2>
+                            <a href="">Lorem ipsum dolor sit amet c</a><br>
+                            <a href="">Lorem ipsum dolor sit amet consectetur.</a><br>
+                            <a href="">Lorem ipsum dolor sit amet.</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <h2>Trailer</h2>
 
         </section>
     </main>
 </body>
+
 </html>
