@@ -1,76 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DH Flix</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DH Flix</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
 </head>
+
 <body>
-    <header>
-        <img src="assets/img/logo.png">
+  <header>
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="assets/img/logo.png">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Itens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section class="intro">
-            <h1>DH Flix</h1>
-            <p>Confira a maior coletânea de filmes que a Digital House tem a te oferecer</p>
+  <main>
+    <section class="intro">
+      <h1>DH Flix</h1>
+      <p>Confira a maior coletânea de filmes que a Digital House tem a te oferecer</p>
+      <a href="#">Explorar</a>
+    </section>
 
-            <a href="#">Explorar</a>
+    <section class="catalog">
+      <div class="container">
+        <h1>Catálogo</h1>
+        <div class="row">
+
+          <section class="col-4 card ">
+
+            <img src="./assets/img/filmes/alertavermelho.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </section>
+          <section class="col-4 card ">
+
+            <img src="./assets/img/filmes/alertavermelho.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </section>
+          <section class="col-4 card ">
+
+            <img src="./assets/img/filmes/alertavermelho.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </section>
+          <section class="col-4 card ">
+
+            <img src="./assets/img/filmes/alertavermelho.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </section>
+          <section class="col-4 card ">
+
+            <img src="./assets/img/filmes/alertavermelho.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </section>
+          <section class="col-4 card ">
+
+            <img src="./assets/img/filmes/alertavermelho.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <section class="col aluno">
+          <h1>Primeiro Aluno</h1>
+          <p>Responsavel pelo desenvolvimento ...</p>
+          <ul>
+            <li><a href=""><img src="./assets/img/linkedin.png" alt="linkedin"></a></li>
+            <li><a href=""><img src="./assets/img/github.png" alt="Github"></a></li>
+          </ul>
         </section>
 
-        <section class="catalog">
-            <h1>Catálogo</h1>
-
-            <section class="card">
-                <img src="assets/img/filmes/">
-                <div class="card-description">
-                    <h1>Titulo do filme</h1>
-                    <p>Descrição do filme</p>
-                    <a href="#">Abrir</a>
-                </div>
-            </section>
-        </section>
-    </main>
-
-    <footer>
-        <section class="aluno">
-            <h1>Primeiro Aluno</h1>
-            <p>Responsavel pelo desenvolvimento ...</p>
-            <ul>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Github</a></li>
-            </ul>
+        <section class="col aluno">
+          <h1>Primeiro Aluno</h1>
+          <p>Responsavel pelo desenvolvimento ...</p>
+          <ul>
+            <li><a href=""><img src="./assets/img/linkedin.png" alt="linkedin"></a></li>
+            <li><a href=""><img src="./assets/img/github.png" alt="Github"></a></li>
+          </ul>
         </section>
 
-        <section class="aluno">
-            <h1>Primeiro Aluno</h1>
-            <p>Responsavel pelo desenvolvimento ...</p>
-            <ul>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Github</a></li>
-            </ul>
+        <section class="col aluno">
+          <h1>Primeiro Aluno</h1>
+          <p>Responsavel pelo desenvolvimento ...</p>
+          <ul>
+            <li><a href=""><img src="./assets/img/linkedin.png" alt="linkedin"></a></li>
+            <li><a href=""><img src="./assets/img/github.png" alt="Github"></a></li>
+          </ul>
         </section>
+      </div>
 
-        <section class="aluno">
-            <h1>Primeiro Aluno</h1>
-            <p>Responsavel pelo desenvolvimento ...</p>
-            <ul>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Github</a></li>
-            </ul>
-        </section>
+      <p>Checkpoint 3 desenvolvido em 2021</p>
 
-        <p>Checkpoint 3 desenvolvido em 2021</p>
-    </footer>
+    </div>
+  </footer>
 </body>
+
 </html>
