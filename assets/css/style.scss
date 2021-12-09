@@ -1,0 +1,16 @@
+.intro {
+    height: 100vh;
+    background: url('../img/bg.jpg');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #efefef;
+    div{
+        width: fit-content;
+    }
+    h1{
+        color: #E51B3E;
+        font-weight: bolder;
+    }
+}
