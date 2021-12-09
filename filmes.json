@@ -7,7 +7,7 @@
     "diretor": "Chloé Zhao",
     "roteirista": "Chloé Zhao, Kaz Firpo, Ryan Firpo, Patrick Burleigh",
     "trailer": "https://www.youtube.com/watch?v=tjO-qmj_vs0",
-    "foto": "./img/eternos"
+    "foto": "./img/eternos.jpg"
 },
 
 {
@@ -18,7 +18,7 @@
     "diretor": "Chloé Zhao",
     "roteirista": "Chloé Zhao, Kaz Firpo, Ryan Firpo, Patrick Burleigh",
     "trailer": "https://www.youtube.com/watch?v=tjO-qmj_vs0",
-    "foto": "./img/eternos"
+    "foto": "./img/marighella.jpg"
 },
 
 {
@@ -29,7 +29,7 @@
     "diretor": "Rawson Marshall Thurber",
     "roteirista": "Rawson Marshall Thurber",
     "trailer": "https://youtu.be/CHn6-bl2ndI",
-    "foto": "./img/alertavermelho"
+    "foto": "./img/alertavermelho.jpg"
 },
 
 {
@@ -40,7 +40,7 @@
     "diretor": "McG",
     "roteirista": "Brian Duffield",
     "trailer": "https://youtu.be/kL5wAOWArMA",
-    "foto": "./img/baba"
+    "foto": "./img/baba.jpg"
 },
 
 {
@@ -51,7 +51,7 @@
     "diretor": "Martin Campbell",
     "roteirista": "Martin Campbell",
     "trailer": "https://youtu.be/yu_QHP5DPvI",
-    "foto": "./img/profissional"
+    "foto": "./img/profissional.jpg"
 },
 
 {
@@ -62,7 +62,7 @@
     "diretor": "Pablo Larraín",
     "roteirista": "Pablo Larraín",
     "trailer": "https://youtu.be/O4nVmmdQBvg",
-    "foto": "./img/spencer"
+    "foto": "./img/spencer.jpg"
 }
 
 ]
