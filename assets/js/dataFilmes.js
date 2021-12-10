@@ -1,4 +1,4 @@
-[    
+const filmes = [    
 {
     "nome": "Eternos",
     "data": "04.11",
@@ -64,5 +64,6 @@
     "trailer": "https://youtu.be/O4nVmmdQBvg",
     "foto": "./img/spencer.jpg"
 }
+];
 
-]
+module.exports = filmes;
