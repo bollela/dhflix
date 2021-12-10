@@ -1,32 +1,15 @@
-const filmes = [require('./filmes.json')];
+const filmes = JSON.parse(dataFilmes);
+// console.log(filmes);
 
-buildTable(filmes)
+let cards = document.querySelectorAll('.card');
 
-function buildTable(data){
-    var table = document.getElementById('myTable')
+let nomeFilme="";
+let imagemFilme="";
+let descricaoPequena="";
 
-    for (var i = 0; i < data.length; i++){
-        var row = "<tr>
-                        <td>${data[i].nome}</td>
-                        <td>${data[i].data}</td>
-                        <td>${data[i].descCurta}</td>
-                        <td>${data[i].descLonga}</td>
-                        <td>${data[i].diretor}</td>
-                        <td>${data[i].roteirista}</td>
-                        <td>${data[i].trailer}</td>
-                  </tr>"
-        table.innerHTML += row
-
-
-    }
+for (let i = 0; i < cards.length; i++){
+    nomeFilme = filmes[i].nome;
+    imagemFilme = filmes[i].foto;
+    descricaoPequena = filmes[i].descCurta;
+    cards[i].innerHTML ="<img src='./assets"+imagemFilme+"'class='card-img-top' alt=''><div class='card-body'><h1 class='card-title'>"+nomeFilme+"</h1>\n<p class='card-text'>"+descricaoPequena+"</p>\n<a href='about-item-catalog.html?filme="+i+"' class='btn btn-success'>Go somewhere</a>\n</div>";
 }
-{/* {
-    "nome": "Eternos",
-    "data": "04.11",
-    "descCurta": "Um grupo de heróis imortais é forçado a sair da sombras para salvar a humanidade.",
-    "descLonga": "Dirigida por Chloé Zhao e protagonizada por Angelina Jolie, Salma Hayek e diversos outros grandes nomes de Hollywood, a história épica da Marvel, que abrange milhares de anos, apresenta um grupo de heróis imortais forçados a sair das sombras para se reunir contra os inimigos mais antigos da humanidade, os Deviantes.",
-    "diretor": "Chloé Zhao",
-    "roteirista": "Chloé Zhao, Kaz Firpo, Ryan Firpo, Patrick Burleigh",
-    "trailer": "https://www.youtube.com/watch?v=tjO-qmj_vs0",
-    "foto": "./img/eternos"
-}, */}
