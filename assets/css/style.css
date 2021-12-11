@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 77px;
+}
+
 body {
   scroll-behavior: smooth;
 }
@@ -12,6 +16,24 @@ body {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+}
+
+.main-header nav .active {
+  color: #E51B3E !important;
+}
+
+.main-header nav .active:hover {
+  border-bottom: 1px solid #E51B3E;
+}
+
+.main-header nav a {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid #F8F9FA;
+}
+
+.main-header nav a:hover {
+  border-bottom: 1px solid #c0c0c0;
 }
 
 section {
@@ -119,8 +141,8 @@ footer p {
 
 .catalog h1 {
   text-align: center;
-  margin-bottom: 40px;
   font-weight: bolder;
+  margin-bottom: 40px;
 }
 
 .catalog .card {
@@ -128,12 +150,18 @@ footer p {
   padding: 0;
 }
 
+.catalog .card:hover > img {
+  max-height: 100%;
+}
+
 .catalog .card img {
-  height: 350px;
+  max-height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .catalog .card h1 {

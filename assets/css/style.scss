@@ -1,4 +1,8 @@
 // CSS GERAL
+html{
+    scroll-padding-top: 77px;
+}
+
 body{
     scroll-behavior: smooth;
 }
@@ -9,6 +13,21 @@ body{
     z-index: 999;
     .navbar-collapse{
         flex-grow: 0;
+    }
+    nav{
+        .active{
+            color: #E51B3E !important;
+            &:hover{
+                border-bottom: 1px solid #E51B3E;
+            }
+        }
+        a{
+            transition: 0.3s ease-in-out;
+            border-bottom: 1px solid #F8F9FA;
+            &:hover{
+                border-bottom: 1px solid #c0c0c0;
+            }
+        }
     }
 }
 
@@ -91,19 +110,25 @@ footer{
 
 .catalog{
     padding: 40px 0;
+
     h1{
         text-align: center;
-        margin-bottom: 40px;
         font-weight: bolder;
+        margin-bottom: 40px;
     }
 
     .card{
         margin-bottom: 25px;
         padding: 0;
+        
+        &:hover > img{
+            max-height: 100%;
+        }
         img{
-            height: 350px;
+            max-height: 350px;
             object-fit: cover;
             object-position: top;
+            transition: 0.3s ease-in-out;
         }
         h1{
             font-size: 1.25rem;
