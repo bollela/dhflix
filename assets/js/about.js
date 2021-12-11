@@ -23,6 +23,8 @@ director.innerHTML = filmes[pesquisa].diretor;
 writters.innerHTML = filmes[pesquisa].roteirista;
 launchDate.innerHTML = filmes[pesquisa].data;
 
+document.title = "DH Flix | " + filmes[pesquisa].nome;
+
 if((filmes[pesquisa].nota == 0 ) || (filmes[pesquisa].nota == undefined)){
     for(let i = maxStars; i > 0; i--){
         outlineStars+="<li>☆</li>";

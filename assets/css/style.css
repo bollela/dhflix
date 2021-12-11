@@ -6,36 +6,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.main-header {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-}
-
-.main-header .navbar-collapse {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-}
-
-.main-header nav .active {
-  color: #E51B3E !important;
-}
-
-.main-header nav .active:hover {
-  border-bottom: 1px solid #E51B3E;
-}
-
-.main-header nav a {
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  border-bottom: 1px solid #F8F9FA;
-}
-
-.main-header nav a:hover {
-  border-bottom: 1px solid #c0c0c0;
-}
-
 section {
   padding: 40px 0;
 }
@@ -91,6 +61,36 @@ footer .aluno ul a:hover > img {
 footer p {
   text-align: center;
   margin-top: 20px;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.main-header .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.main-header nav .active {
+  color: #E51B3E !important;
+}
+
+.main-header nav .active:hover {
+  border-bottom: 1px solid #E51B3E;
+}
+
+.main-header nav a {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid #F8F9FA;
+}
+
+.main-header nav a:hover {
+  border-bottom: 1px solid #c0c0c0;
 }
 
 .intro {
