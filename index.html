@@ -13,19 +13,10 @@
 </head>
 
 <body>
-  <!-- <div class="modal-container" id="modal_container">
-    <div class="modal">
-      <h1>Informações Login</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, rerum odit magnam expedita sit temporibus tenetur ut maxime architecto aliquid ipsa voluptatem error quod delectus quo tempora maiores assumenda, beatae eveniet nam, explicabo in debitis. Sed harum ullam error consequatur?
-      </p>
-      <button class="buttonLogin" id="close">Fechar</button>
-    </div>
-  </div> -->
-
   <header class="main-header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-      <a class="navbar-brand" href="./index.html"><img src="assets/img/logo.png"></a>
+        <a class="navbar-brand" href="./index.html"><img src="assets/img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,7 +33,8 @@
               <a class="nav-link" href="#">Sobre nós</a>
             </li>
             <li class="nav-item">
-              <button id="open" class="buttonLogin">Entrar</button>
+              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Entrar</a>
+
             </li>
           </ul>
         </div>
@@ -56,7 +48,7 @@
         <h1>DH Flix</h1>
         <p>Confira a maior coletâne a de filmes que a Digital House tem a te oferecer</p>
       </div>
-     
+
       <a href="#catalog" class="button">Explorar</a>
     </section>
 
@@ -69,7 +61,7 @@
             <section class="card">
             </section>
           </div>
-          
+
           <div class="col-12 col-lg-4 col-md-6 d-flex align-items-stretch">
             <section class="card">
             </section>
@@ -124,7 +116,8 @@
           <h1>Moises Bollela</h1>
           <p>Responsavel pelo desenvolvimento do html</p>
           <ul>
-            <li><a href="https://www.linkedin.com/in/moises-bollela-664820207/"><img src="./assets/img/linkedin.png" alt="linkedin"></a></li>
+            <li><a href="https://www.linkedin.com/in/moises-bollela-664820207/"><img src="./assets/img/linkedin.png"
+                  alt="linkedin"></a></li>
             <li><a href="https://github.com/bollela"><img src="./assets/img/github.png" alt="Github"></a></li>
           </ul>
         </section>
@@ -135,25 +128,36 @@
     </div>
   </footer>
 
-  <section class="modal" tabindex="-1">
+  <!-- MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <header class="modal-header">
-          <h5 class="modal-title">Login</h5>
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entrar</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </header>
-        <main class="modal-body">
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/logo.png">
           <form>
-            <label for="">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-danger">Entrar</button>
           </form>
-        </main>
-        <footer class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </footer>
-      </div>
+            
+        </div>
+          </div>
+        </div>
+        </div>
     </div>
-  </section>
+  </div>
 
   <script src="assets/js/bootstrap/bootstrap.min.js"></script>
   <script src="./assets/js/script.js"></script>
