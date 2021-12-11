@@ -1,64 +1,21 @@
-.intro {
-  height: 100vh;
-  background: url("../img/bg.jpg");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #efefef;
+body {
+  scroll-behavior: smooth;
 }
 
-.intro div {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
-.intro h1 {
-  color: #E51B3E;
-  font-weight: bolder;
+.main-header .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 
-.intro .button {
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border: 1px solid #2ecc71;
-  background-color: rgba(46, 204, 113, 0.1);
-  color: #efefef;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-.catalog {
+section {
   padding: 40px 0;
-}
-
-.catalog h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: bolder;
-}
-
-.catalog .card {
-  margin-bottom: 25px;
-}
-
-.catalog .card img {
-  height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
 }
 
 footer {
@@ -114,10 +71,121 @@ footer p {
   margin-top: 20px;
 }
 
+.intro {
+  height: 100vh;
+  background: url("../img/bg.jpg") no-repeat fixed center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #efefef;
+}
+
+.intro div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.intro h1 {
+  color: #E51B3E;
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+.intro .button {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid #2ecc71;
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #efefef;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.catalog {
+  padding: 40px 0;
+}
+
+.catalog h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bolder;
+}
+
+.catalog .card {
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.catalog .card img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.catalog .card h1 {
+  font-size: 1.25rem;
+}
+
+.movie-video {
+  padding: 0;
+}
+
 .movie-video iframe {
   width: 100%;
   height: 100vh;
   position: absolute;
   z-index: -1;
+}
+
+.movie-title {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #efefef;
+  z-index: 1;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.movie-title h1 {
+  font-size: 4rem;
+}
+
+.movie-title .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  font-size: 1.5rem;
+  color: #daa520;
+}
+
+.about-movie {
+  background-color: #000;
+  color: #efefef;
+}
+
+.about-movie h2 {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
