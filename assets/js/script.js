@@ -13,3 +13,15 @@ for (let i = 0; i < cards.length; i++){
     descricaoPequena = filmes[i].descCurta;
     cards[i].innerHTML ="<img src='./assets"+imagemFilme+"'class='card-img-top' alt=''><div class='card-body'><h1 class='card-title'>"+nomeFilme+"</h1>\n<p class='card-text'>"+descricaoPequena+"</p>\n<a href='about-item-catalog.html?filme="+i+"' class='btn btn-success'>Abrir</a>\n</div>";
 }
+
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const modal_container = document.getElementById('modal_container');
+
+open.addEventListener('click', () => {
+    modal_container.classList.add('show');
+});
+
+close.addEventListener('click', () => {
+    modal_container.classList.remove('show')
+})

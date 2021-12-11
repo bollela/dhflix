@@ -16,6 +16,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+.modal-container.show{
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal{
@@ -23,6 +32,10 @@ body {
   width: 600px;
   max-width: 100%;
   padding: 30px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .buttonLogin{
@@ -62,19 +75,19 @@ body {
   color: #E51B3E !important;
 }
 
-/* .main-header nav .active:hover {
+.main-header nav .active:hover {
   border-bottom: 10px solid #E51B3E;
-} */
+}
 
-/* .main-header nav a {
+.main-header nav a {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   border-bottom: 1px solid #F8F9FA;
-} */
+}
 
-/* .main-header nav a:hover {
+.main-header nav a:hover {
   border-bottom: 1px solid #c0c0c0;
-} */
+}
 
 section {
   padding: 40px 0;
@@ -230,8 +243,8 @@ footer p {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 .catalog .card h1 {
