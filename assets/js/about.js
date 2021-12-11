@@ -13,8 +13,8 @@ let director = document.getElementById('director');
 let writters = document.getElementById('writters');
 let launchDate = document.getElementById('launch-date');
 let stars = document.getElementById('stars');
-let notaFilme = 0
-let outlineStars = "";
+let notaFilme = filmes[pesquisa].notaFilme;
+let starsToBeDraw = "";
 
 movieSection.innerHTML = "<iframe src='https://www.youtube.com/embed/"+videoId+"?autoplay=1&mute=1&loop=1' allow='autoplay; clipboard-write; encrypted-media;'></iframe>";
 movieTitle.innerHTML = filmes[pesquisa].nome;
@@ -24,11 +24,14 @@ writters.innerHTML = filmes[pesquisa].roteirista;
 launchDate.innerHTML = filmes[pesquisa].data;
 
 document.title = "DH Flix | " + filmes[pesquisa].nome;
-
-if((filmes[pesquisa].nota == 0 ) || (filmes[pesquisa].nota == undefined)){
-    for(let i = maxStars; i > 0; i--){
-        outlineStars+="<li>☆</li>";
-    }
-    stars.innerHTML = outlineStars;
+    
+for(let i = notaFilme; i > 0; i--){
+    starsToBeDraw+="<li>★</li>";
 }
+
+for(let i= maxStars - notaFilme; i>0; i--){
+    starsToBeDraw+="<li>☆</li>";
+}
+
+stars.innerHTML = starsToBeDraw;
 
