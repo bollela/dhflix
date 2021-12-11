@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Flix - Item</title>
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/dataFilmes.json"></script>
 </head>
 
 <body>
@@ -39,14 +41,8 @@
     </header>
 
     <main>
-        <section class="movie-video row-3 column-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="./assets/img/filmes/alertavermelho.jpg" alt="imagem alertavermelho">
-                    </div>
-                </div>
-            </div>
+        <section class="movie-video">
+            <div id="movie-video"></div>
         </section>
 
         <section class="about-movie">
@@ -83,7 +79,7 @@
                 <div class="row">
                     <div class="col">
                         <h1>Trailer</h1>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5JQuYpBZarc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
                     </div>
                 </div>
             </div>
@@ -126,6 +122,7 @@
     
         </div>
       </footer>
+      <script src="assets/js/about.js"></script>
 </body>
 
 </html>
