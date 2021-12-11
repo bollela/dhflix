@@ -6,100 +6,17 @@ body {
   scroll-behavior: smooth;
 }
 
-/* .modal-container{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.6s ease;
-}
-
-.modal-container.show{
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal{
-  background-color: white;
-  width: 600px;
-  max-width: 100%;
-  padding: 30px 45px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.buttonLogin{
-  background-color: #E51B3E;
-  color: white;
-  border: 0;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 2px 7px;
-  font-size: 1em;
-}
-
-.buttonModal{
-  background-color: #198754;
-  color: white;
-  border: 0;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 10px 25px;
-  font-size: 1.5rem;
-} */
-
-
-.main-header {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-}
-
-.main-header .navbar-collapse {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-}
-
-.main-header nav .active {
-  color: #E51B3E !important;
-}
-
-.main-header nav .active:hover {
-  border-bottom: 10px solid #E51B3E;
-}
-
-.main-header nav a {
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  border-bottom: 1px solid #F8F9FA;
-}
-
-.main-header nav a:hover {
-  border-bottom: 1px solid #c0c0c0;
-}
-
 section {
   padding: 40px 0;
 }
 
-footer {
+.main-footer {
   background-color: #040404;
   color: #efefef;
   padding: 40px 0 20px;
 }
 
-footer .aluno {
+.main-footer .aluno {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,16 +29,16 @@ footer .aluno {
           align-items: center;
 }
 
-footer .aluno h1 {
+.main-footer .aluno h1 {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-footer .aluno p {
+.main-footer .aluno p {
   margin: 0 0 20px;
 }
 
-footer .aluno ul {
+.main-footer .aluno ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,18 +47,18 @@ footer .aluno ul {
   padding: 0;
 }
 
-footer .aluno ul a img {
+.main-footer .aluno ul a img {
   max-width: 48px;
   opacity: 0.3;
   -webkit-transition: .3s ease-in-out all;
   transition: .3s ease-in-out all;
 }
 
-footer .aluno ul a:hover > img {
+.main-footer .aluno ul a:hover > img {
   opacity: 1;
 }
 
-footer p {
+.main-footer p {
   text-align: center;
   margin-top: 20px;
 }
@@ -243,8 +160,8 @@ footer p {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  -webkit-transition: 0.7s ease-in-out;
-  transition: 0.7s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .catalog .card h1 {

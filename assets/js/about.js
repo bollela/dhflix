@@ -26,11 +26,11 @@ launchDate.innerHTML = filmes[pesquisa].data;
 document.title = "DH Flix | " + filmes[pesquisa].nome;
     
 for(let i = notaFilme; i > 0; i--){
-    starsToBeDraw+="<li>★</li>";
+    starsToBeDraw+="<li>★</li>\n";
 }
 
 for(let i= maxStars - notaFilme; i>0; i--){
-    starsToBeDraw+="<li>☆</li>";
+    starsToBeDraw+="<li>☆</li>\n";
 }
 
 stars.innerHTML = starsToBeDraw;
