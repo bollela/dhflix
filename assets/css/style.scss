@@ -7,30 +7,6 @@ body{
     scroll-behavior: smooth;
 }
 
-.main-header{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    .navbar-collapse{
-        flex-grow: 0;
-    }
-    nav{
-        .active{
-            color: #E51B3E !important;
-            &:hover{
-                border-bottom: 1px solid #E51B3E;
-            }
-        }
-        a{
-            transition: 0.3s ease-in-out;
-            border-bottom: 1px solid #F8F9FA;
-            &:hover{
-                border-bottom: 1px solid #c0c0c0;
-            }
-        }
-    }
-}
-
 section{
     padding: 40px 0;
 }
@@ -78,6 +54,29 @@ footer{
     }
 }
 
+.main-header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .navbar-collapse{
+        flex-grow: 0;
+    }
+    nav{
+        .active{
+            color: #E51B3E !important;
+            &:hover{
+                border-bottom: 1px solid #E51B3E;
+            }
+        }
+        a{
+            transition: 0.3s ease-in-out;
+            border-bottom: 1px solid #F8F9FA;
+            &:hover{
+                border-bottom: 1px solid #c0c0c0;
+            }
+        }
+    }
+}
 // INDEX
 
 .intro {

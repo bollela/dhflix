@@ -7,4 +7,4 @@ Foi desenvolvido se baseando no exercício e tema requisitado pelo exercício.
 Ele está utilizando:
 - Bootstrap 5
 - SASS
-- JS + JSON
+- JS + "JSON"
