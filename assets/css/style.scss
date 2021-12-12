@@ -1,10 +1,13 @@
 // CSS GERAL
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&display=swap');
+
 html{
-    scroll-padding-top: 77px;
+    scroll-padding-top: 76px;
 }
 
 body{
     scroll-behavior: smooth;
+    font-family: "Readex Pro", sans-serif;
 }
 
 section{
@@ -76,6 +79,13 @@ section{
             }
         }
     }
+
+    .navbar-brand{
+        border: none;
+        &:hover{
+            border: none;
+        }
+    }
 }
 // INDEX
 
@@ -108,20 +118,25 @@ section{
 }
 
 .catalog{
-    padding: 40px 0;
-
     h1{
         text-align: center;
         font-weight: bolder;
         margin-bottom: 40px;
     }
-
     .card{
         margin-bottom: 25px;
         padding: 0;
-        
+        border-radius: 8px;
         &:hover > img{
             max-height: 100%;
+        }
+        .card-body{
+            border-radius: 8px;
+            background-color: #F4F4F4;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.2);
         }
         img{
             max-height: 350px;
@@ -131,6 +146,7 @@ section{
         }
         h1{
             font-size: 1.25rem;
+            margin-bottom: 0;
         }
     }
 }
@@ -179,3 +195,26 @@ section{
     }
 }
 
+@media(max-width:600px) {
+    section{
+        padding: 20px;
+    }
+
+    .movie-title{
+        padding: 0;
+
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+
+    .catalog{
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .card h1{
+            font-size:1.75rem;
+        }
+    }
+}
