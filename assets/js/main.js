@@ -11,7 +11,7 @@ let descricaoPequena="";
 for (let i = 0; i < cards.length; i++){
     nomeFilme = filmes[i].nome;
     imagemFilme = filmes[i].foto;
-    descricaoPequena = filmes[i].descCurta;
+    descricaoPequena = filmes[i].descLonga.substring(0,170)+"...";
     cards[i].innerHTML ="<img src='./assets"+imagemFilme+"'class='card-img-top' alt=''><div class='card-body'><h1 class='card-title'>"+nomeFilme+"</h1>\n<p class='card-text'>"+descricaoPequena+"</p>\n<a href='about-item-catalog.html?filme="+i+"' class='btn btn-success'>Abrir</a>\n</div>";
 }
 
@@ -20,5 +20,5 @@ function addFlex(e){
 }
 
 function removeFlex(e){
-    setTimeout(()=>e.classList.remove("d-flex"),301);
+    setTimeout(()=>e.classList.remove("d-flex"),300);
 }
